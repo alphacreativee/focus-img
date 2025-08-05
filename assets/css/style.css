@@ -59,11 +59,11 @@ section {
   height: 100%;
   overflow: hidden;
   clip-path: polygon(
-    50svh 0px,
-    0px 50%,
-    50svh 100%,
-    100% calc(100% + 100svh),
-    100% - 100svh
+    50vh 0,
+    /* Point 1 */ 0 50%,
+    /* Point 2 */ 50vh 100%,
+    /* Point 3 */ 100% calc(100% + 100vh),
+    /* Point 4 */ 100% calc(100% - 100vh) /* Point 5 */
   );
 }
 .spotlight-titles-container::after,
